@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tattva Capital</title>
+  <link rel="stylesheet" href="stylesp.css"/>
+  <style>
+  body {
+  background-image: url('https://www.shutterstock.com/image-photo/asia-stock-trader-agent-sale-260nw-2102130433.jpg'); /* or full URL */
+  background-size: cover;          /* ensures it fills the screen */
+  background-repeat: no-repeat;    /* prevents tiling */
+  background-position: center;     /* centers the image */
+  background-attachment: fixed;    /* optional: keeps image in place when scrolling */
+  margin: 0; /* ensure body fills the screen */
+  padding: 0;
+}
+</style>
+</head>
+<body>
+  <section>
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">☰</div>
+    <script> toggleMenu() {
+  document.querySelector('.nav-left').classList.toggle('open');
+  document.querySelector('.nav-right').classList.toggle('open');
+    }</script>
+<nav class="sticky-nav">
+  <ul class="nav-left">
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Home</a>
+      <div class="dropdown-horizontal-with-line">
+        <div class="separator-line"></div>
+        <div class="submenu-items">
+          <a href="Margin calculator.html">About</a>
+          <a href="#">Mission</a>
+          <a href="#">Vision</a>
+        </div>
+      </div>
+    </li>
+    <li class="dropdown">
+  <a href="#" class="dropbtn">Services</a>
+  <div class="dropdown-horizontal">
+    <div class="separator-line"></div>
+    <div class="submenu-items">
+      <a href="#">Investment Advisory</a>
+      <a href="#">Analytics & Reports</a>
+      <a href="#">Estate Plan</a>
+      <a href="#">Philanthropy</a>
+    </div>
+  </div>
+</li>
+    <li><a href="#">Careers</a></li>
+  </ul>
+  <span class="brand">Tattva Capital</span>
+  <ul class="nav-right">
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Login</a>
+      <div class="dropdown-content">
+        <a href="login-employee.html">Employee</a>
+        <a href="login-client.html">Client</a>
+        <a href="login-partner.html">Business Partner</a>
+      </div>
+    </li>
+    <li><a href="contactp.html" target="_blank">Contact Us</a></li>
+  </ul>
+</nav>
+
+  <main class="hero">
+    <h1>Trade smart, not often —<br> and let your capital do the compounding.</h1>
+    <p>Your journey to financial growth starts here.</p>
+    <!--<a href="https://live.meon.co.in/lkpsec/individual_rm?YnJhbmNoX3JlZmVyZW5jZV9jb2RlPUI4MzAz" class="get-started-btn">Get started</a>
+
+     Correct Search Container -->
+    <div class="search-container">
+      <form id="searchForm" class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search stocks, dividends, updates..." required />
+        <button type="submit">Search</button>
+      </form>
+      <div class="search-suggestions" id="searchSuggestions">
+        <div class="tab-buttons">
+          <button class="tab active" onclick="showTab('all')">All</button>
+          <button class="tab" onclick="showTab('stocks')">Stocks</button>
+          <button class="tab" onclick="showTab('fo')">F&O</button>
+          <button class="tab" onclick="showTab('mf')">Mutual Funds</button>
+          <button class="tab" onclick="showTab('etf')">ETF</button>
+          <button class="tab" onclick="showTab('faqs')">FAQs</button>
+        </div>
+        <div class="tab-content" id="tabContent"></div>
+      </div>
+    </div>
+
+    <iframe id="calculatorFrame" src="" style="width: 100%; height: 700px; border: none; display: none;"></iframe>
+  </main>
+  </section>
+  <section id="services" style="padding: 50px 90px; background: #e8f0fe;">
+  <h2 style="font-size: 28px; margin-bottom: 10px; text-align: left;">Explore Investment Options</h2>
+  <p style="margin-bottom: 30px; color: #666; text-align: left;">Choose how you want to grow your money.</p>
+
+  <div class="zigzag-card">
+    <div class="zigzag-image" style="background-image: url('https://cdn.pixabay.com/photo/2017/08/18/18/56/dices-over-newspaper-2656028_1280.jpg');"></div>
+    <div class="zigzag-content">
+      <h3>Stocks & Intraday</h3>
+      <p>Trade and invest in the Indian stock market in real-time.</p>
+    </div>
+  </div>
+
+  <div class="zigzag-card">
+    <div class="zigzag-image" style="background-image: url('https://media.istockphoto.com/id/1556389414/video/man-using-a-laptop-double-exposure-with-business-data-analytics-dashboard.avif?s=640x640&k=20&c=dG7--W8MQuUsuVTaYg7kplrnAkNUoeH6u02Nn_SCwfE=');"></div>
+    <div class="zigzag-content">
+      <h3><u>Analytical Reports</u></h3>
+      <p>Get comprehensive insights and data-driven reports to make better trading decisions.</p>
+      <p>Track market movements, key indices, and performance metrics to stay updated with the latest trends.</p>
+
+    </div>
+  </div>
+
+  <div class="zigzag-card">
+    <div class="zigzag-image" style="background-image: url('https://media.istockphoto.com/id/1487894858/photo/candlestick-chart-and-data-of-financial-market.jpg?s=612x612&w=0&k=20&c=wZ6vVmbm4BV2JOePSnNNz-0aFVOJZ0P9nhdeOMGUg5I=');"></div>
+    <div class="zigzag-content">
+      <h3>Futures & Options</h3>
+      <p>Advanced trading with margin and leverage tools.</p>
+    </div>
+  </div>
+</section>
+
+  <section style="display: flex; align-items: center; justify-content: space-between; padding: 40px 50px 40px 90px; background-color:#e8f0fe; gap: 30px;">
+
+  <!-- Text Column -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px; padding: 20px;">
+    <h2 style="font-size: 36px; color: #1a237e; margin-bottom: 20px; text-align:left;">Smarter Investing Starts Here</h2>
+    <p style="font-size: 18px; color: #333; margin-bottom: 30px;">
+      Use our intuitive SIP and Margin Calculators to plan your financial journey. 
+      These tools give you the clarity and confidence to make informed investment decisions.
+    </p>
+    <a href="sip.html" target="_blank" style="display: inline-block; margin-right: 20px; padding: 12px 24px; background-color: #1976d2; color: #fff; border-radius: 6px; text-decoration: none;">SIP Calculator</a>
+    <a href="Margin calculator.html" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #1976d2; color: #fff; border-radius: 6px; text-decoration: none;">Retirement Calculator</a>
+  </div>
+
+  <!-- Image Column -->
+  <div style="flex: 1; min-width: 500px; max-width: 500px; padding: 40px; text-align: center;">
+    <a href="sip.html" target="_blank">
+      <img src="https://media.gettyimages.com/id/1428165420/photo/finance-calculator.jpg?s=612x612&w=0&k=20&c=WLmNSLA0mHoqfUn6wJImMHPn9Ns62xMeQteOtkvS_-s=" 
+           alt="Investment Calculator" 
+           style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); cursor: pointer;">
+    </a>
+  </div>
+</section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const suggestions = {
+        all: ["What is Sensex?", "Nifty today live", "Best dividend stocks 2024", "How to apply for IPO", "T+1 settlement rules"],
+        stocks: ["Reliance Industries share price", "Infosys quarterly results", "HDFC Bank dividend record date", "TCS bonus history"],
+        fo: ["Nifty 50 options chain", "Bank Nifty futures lot size", "How to trade F&O in India"],
+        mf: ["Top mutual funds for SIP", "Nippon India Small Cap Fund", "HDFC Flexi Cap Fund"],
+        etf: ["Groww Nifty India Defence ETF", "Tata Gold Exchange Traded Fund", "Nippon India ETF Gold BeES", "Groww Gold ETF", "Nippon India Silver ETF"],
+        faqs: ["How to open demat account?", "Is trading safe for beginners?", "What are ETFs?", "What is intraday trading?"]
+      };
+
+      const searchInput = document.getElementById('searchInput');
+      const suggestionsBox = document.getElementById('searchSuggestions');
+      const tabContent = document.getElementById('tabContent');
+
+      window.showTab = function(tabType) {
+        document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`.tab[onclick="showTab('${tabType}')"]`).classList.add('active');
+
+        const items = suggestions[tabType].map(text => `<li onclick="selectSuggestion('${text}')">${text}</li>`).join('');
+        tabContent.innerHTML = `<ul>${items}</ul>`;
+      };
+
+      window.selectSuggestion = function(text) {
+        searchInput.value = text;
+        suggestionsBox.style.display = 'none';
+        window.open(`https://www.google.com/search?q=${encodeURIComponent(text)}`, '_blank');
+      };
+
+      searchInput.addEventListener('focus', () => {
+        suggestionsBox.style.display = 'block';
+        showTab('all');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!suggestionsBox.contains(e.target) && e.target !== searchInput) {
+          suggestionsBox.style.display = 'none';
+        }
+      });
+
+      document.getElementById('searchForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const query = searchInput.value.trim().toLowerCase();
+        const allowedKeywords = ['stock', 'nifty', 'sensex', 'dividend', 'ipo', 'trading', 'market', 'share', 'exchange', 'equity'];
+        const isTradingRelated = allowedKeywords.some(keyword => query.includes(keyword));
+
+        if (!isTradingRelated) {
+          alert('Please search for trading-related information only.');
+          return;
+        }
+
+        const googleSearchURL = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        window.open(googleSearchURL, '_blank');
+      });
+    });
+  </script>
+  <script>
+  document.querySelectorAll('.dropdown').forEach(dropdown => {
+    let timer;
+
+    dropdown.addEventListener('mouseenter', () => {
+      clearTimeout(timer);
+      dropdown.classList.add('open');
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      timer = setTimeout(() => {
+        dropdown.classList.remove('open');
+      }, 300); // wait 300ms before hiding, allows user to move cursor
+    });
+  });
+</script>
+<script>
+  const nav = document.querySelector('.sticky-nav');
+  const dropdowns = document.querySelectorAll('.dropdown');
+
+  // Start with transparent
+  nav.classList.add('transparent');
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('mouseenter', () => {
+      nav.classList.remove('transparent');
+      nav.classList.add('solid');
+    });
+
+    dropdown.addEventListener('mouseleave', () => {
+      nav.classList.remove('solid');
+      nav.classList.add('transparent');
+    });
+  });
+
+  // Optional: maintain transparency on normal nav hover
+  nav.addEventListener('mouseenter', () => {
+    if (!nav.classList.contains('solid')) {
+      nav.classList.add('transparent');
+    }
+  });
+</script>
+
+</body>
+</html>
