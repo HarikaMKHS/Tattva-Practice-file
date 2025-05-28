@@ -1,0 +1,971 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #2d2f3a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d2f3a;
+}
+
+.nav-buttons .login-btn {
+  padding: 10px 20px;
+  background-color: #00b386;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  padding: 12px 24px;
+  background-color: #00b386;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Footer image */
+.footer-graphic {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-graphic img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 40px auto 0;
+}
+
+/* Search */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 8px 14px;
+  background-color: #00b386;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1000;
+  color: black;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab {
+  padding: 6px 12px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #00b386;
+  color: white;
+}
+
+.tab-content {
+  font-size: 14px;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content li {
+  padding: 6px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-content li:hover {
+  background: #f9f9f9;
+}
+
+/* Option cards */
+.option-card {
+  flex: 1 1 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.option-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.option-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Navigation */
+nav {
+  background-color: #e8f0fe;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  color: black;
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+=======
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #2d2f3a;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d2f3a;
+}
+
+.nav-buttons .login-btn {
+  padding: 10px 20px;
+  background-color: #00b386;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  padding: 12px 24px;
+  background-color: #00b386;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Footer image */
+.footer-graphic {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-graphic img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 40px auto 0;
+}
+
+/* Search */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+
+.search-bar button {
+  padding: 8px 14px;
+  background-color: #00b386;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: none;
+  z-index: 1000;
+  color: black;
+}
+
+.tab-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab {
+  padding: 6px 12px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #00b386;
+  color: white;
+}
+
+.tab-content {
+  font-size: 14px;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content li {
+  padding: 6px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-content li:hover {
+  background: #f9f9f9;
+}
+
+/* Option cards */
+.option-card {
+  flex: 1 1 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.option-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.option-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Navigation */
+nav {
+  background-color: #e8f0fe;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-align: left;
+  color: black;
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content with separator line */
+.navbar-container {
+  position: relative;
+  width: 100%;
+}
+/* Dropdown container: full width, white background */
+.dropdown {
+  position: relative;
+}
+.dropdown-horizontal-with-line {
+  display: none;
+  position:absolute;
+  top:100%;
+  left:-30px;
+  width: 1217px;
+  /*min-width: 300px;  control width*/
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+  padding: 8px 20px;
+  padding-top: 15px;
+ /* border: 8px white;*/
+ margin-top: 15px;
+ 
+}
+.dropdown-horizontal-with-line {
+  pointer-events: auto; /* ensures it's clickable */
+}
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-horizontal-with-line {
+  display: block;
+}
+
+.dropdown-horizontal {
+  display: none;
+  position:absolute;
+  top:100% ;
+  left:-104.5px;
+  width: 1217px;
+  /*min-width: 300px;  control width*/
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  z-index: 999;
+  padding: 8px 20px;/*height of dropdown bar*/
+  padding-top: 10px;
+  border: 8px white;
+  padding-top: 15px;
+ margin-top: 15px;
+}
+.dropdown-horizontal {
+  pointer-events: auto; /* ensures it's clickable */
+}
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-horizontal {
+  display: block;
+}
+
+/* Optional separator below the Services item */
+.separator-line {
+  height: 1px;
+  background-color: #ccc;
+  margin: 0 16px;
+}
+
+/* Submenu items laid out horizontally */
+.submenu-items {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding:0;
+  /*padding: 12px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;*/
+}
+
+.submenu-items a {
+  color: #1a237e;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.submenu-items a:hover {
+  background-color: #f2f4f8;
+  color: #0d47a1;
+}
+
+.investment-card {
+  display: block;
+  width: 400px;
+  height: 450px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.investment-grid {
+  display: flex;
+  justify-content: start;         /* Align items to the left */
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 70px;              /* ✅ Moves all cards to the right */
+}
+.card-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+}
+
+.card-overlay h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.card-overlay p {
+  font-size: 14px;
+  margin: 0 0 10px;
+  color: #ddd;
+}
+
+.card-note {
+  font-size: 12px;
+  color: #bbb;
+}
+.tool-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #4285f4;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tool-button:hover {
+  background-color: #3367d6;
+  transform: translateY(-2px);
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Left-aligned and right-aligned nav items */
+.nav-left, .nav-right {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Ensure links look consistent */
+.sticky-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Optional: Hover styling */
+.sticky-nav a:hover {
+  color: #1976d2;
+}
+/* Full-page background image container */
+.hero-background {
+  background: url('https://www.shutterstock.com/image-photo/asia-stock-trader-agent-sale-260nw-2102130433.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh; /* Full screen height */
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay for darkening and containing nav */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* optional: dark overlay */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* Dropdown for login */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;;
+  background-color: white;
+  border-radius: 6px;
+  padding-top: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 2000;
+  padding-top: 15px;/* add gap to top of dropdownn */
+ margin-top: 15px;/* Dropdown to down */
+}
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown.open .dropdown-content,
+.dropdown.open .dropdown-horizontal,
+.dropdown.open .dropdown-horizontal-with-line {
+  display: block;
+}
+/* Hero Banner Background */
+.hero-banner {
+  background: url('https://www.shutterstock.com/image-photo/asia-stock-trader-agent-sale-260nw-2102130433.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Brand */
+.brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a237e;
+}
+/* Contact Button */
+.nav-buttons .login-btn {
+  margin-left: 20px;
+  background-color: #1976d2;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Make sure content doesn't go under fixed nav */
+body {
+  padding-top: 100px; /* Adjust to match nav height */
+}
+.sticky-nav {
+  position: fixed;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;/*Width of nav bar*/
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.zigzag-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.zigzag-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.zigzag-image {
+  flex: 1;
+  min-height:400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.zigzag-content {
+  flex: 1;
+  /*background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+.zigzag-content h3 {
+  font-size: 22px;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.zigzag-content p {
+  color: #333;
+  font-size: 16px;
+}
+
+.hero {
+  padding-top: 100px;
+}
+
+main.hero {
+  margin-top: 80px; /* Adjust based on navbar height */
+}
+/* Transparent by default */
+.sticky-nav.transparent {
+  background-color: rgba(255, 255, 255, 0.8); /* or 0.1 for more transparency */
+  transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px); /* optional: glassy effect */
+}
+
+/* Solid when hovering dropdown */
+.sticky-nav.solid {
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: background-color 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  /* Stack nav items vertically */
+  .nav-left, .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sticky-nav {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .brand {
+    margin: 10px 0;
+    font-size: 22px;
+  }
+
+  /* Hero text */
+  .hero h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero p {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Zigzag cards stack */
+  .zigzag-card {
+    flex-direction: column !important;
+    margin-bottom: 30px;
+  }
+
+  .zigzag-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .zigzag-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Calculator section stacking */
+  section[style*="display: flex"] {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  section[style*="display: flex"] .text-column,
+  section[style*="display: flex"] .image-column {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+  .dropdown-horizontal,
+  .dropdown-horizontal-with-line {
+    width: 100vw !important;
+    left: 0 !important;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    overflow-x: auto;
+  }
+
+  .submenu-items {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .submenu-items a {
+    flex: 1 1 auto;
+    min-width: 40%;
+    text-align: center;
+  }
+}
+.zigzag-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows stacking */
+}
+.mobile-menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-left.open,
+  .nav-right.open {
+    display: flex;
+  }
+}
